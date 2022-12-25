@@ -172,14 +172,19 @@
 # with statement
 # when open file with [with]statement no need to close the file explicitly
 
-with open("student.txt",mode="r") as f:
-    data= f.read()
-    print(data)
-print(f.closed) #// checking whether file is closed
+# with open("student.txt",mode="r") as f:
+#     data= f.read()
+#     print(data)
+# print(f.closed) #// checking whether file is closed
 
-
-
-
+import os
+#checking current directory
+path=os.getcwd()
+print(path)
+#checking if absolute path
+print(os.path.isabs(path))
+#checking whether relative path
+print(os.path.relpath(path)) 
 
 
 

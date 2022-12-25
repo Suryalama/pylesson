@@ -157,11 +157,11 @@ The . (or dot) character in a regular expression is called a wildcard and will m
 #(.*)-> will match everything except new line
 # if you want to include . also then you can use re.DOTALL
 
-noNewLineRegex=re.compile(r'.*')
-newLineRegex=re.compile(r'.*',re.DOTALL)
-mo=noNewLineRegex.search('Serve the public trust.\nProtect the innocent.')
-mo1=newLineRegex.search('Serve the public trust.\nProtect the innocent.')
-mo=mo.group()
-mo1=mo1.group()
-print(mo)
-print(mo1)
+# noNewLineRegex=re.compile(r'.*')
+# newLineRegex=re.compile(r'.*',re.DOTALL)
+# mo=noNewLineRegex.search('Serve the public trust.\nProtect the innocent.')
+# mo1=newLineRegex.search('Serve the public trust.\nProtect the innocent.')
+# mo=mo.group()
+# mo1=mo1.group()
+# print(mo)
+# print(mo1)
