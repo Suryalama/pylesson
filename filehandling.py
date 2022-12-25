@@ -179,19 +179,39 @@
 
 import os
 #checking current directory
-path=os.getcwd()
-print(path)
-#checking if absolute path
-print(os.path.isabs(path))
-#checking whether relative path
-print(os.path.relpath(path)) 
+# path=os.getcwd()
+# print(path)
+# #checking if absolute path
+# print(os.path.isabs(path))
+# #checking whether relative path
+# print(os.path.relpath(path)) 
 
+# Finding File Sizes and Folder Contents
 
+# path="/Users/surya/Documents/pythonlesson/"
+# size=os.listdir(path)
+# print(size)
+# totalsize=0
+# for file in size:
+#     print("file: ",file)
+#     print("size of single :",os.path.getsize(file))
+#     totalsize=totalsize+os.path.getsize(file)
+#     print("totalsize :",totalsize)
 
+# print(totalsize)
 
-
-
-
+# Checking Path Validity
+"""
+Many Python functions will crash with an error if you supply them with a path
+that does not exist. The os.path module provides functions to check whether a given path exists and whether it is a file or folder.
+Calling os.path.exists(path) will return True if the file or folder referred to in the argument exists and will return False if it does not exist.
+Calling os.path.isfile(path) will return True if the path argument exists and is a file and will return False otherwise.
+Calling os.path.isdir(path) will return True if the path argument exists and is a folder and will return False otherwise.
+"""
+path="/Users/surya/Documents/pythonlesson/jpt.py"
+# print(os.path.isfile(path))
+# print(os.path.isdir(path))
+# print(os.path.exists(path))
 
 
 
